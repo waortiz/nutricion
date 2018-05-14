@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrición</title>
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="~/Content/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="~/Content/buttons.dataTables.min.css" />
+    <link rel="stylesheet" href="~/Content/css/bootstrap-datepicker3.min.css" />
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript" src="~/Content/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/buttons.print.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/pdfmake.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/vfs_fonts.js"></script>
+    <script type="text/javascript" src="~/Scripts/jszip.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/chart.loader.js"></script>
+
+   </head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+ 
+</body>
+</html>
