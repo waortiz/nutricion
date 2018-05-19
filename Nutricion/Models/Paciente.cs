@@ -12,7 +12,7 @@ namespace Nutricion.Models
         public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
-        public int TipoDocumento { get; set; }
+        public TipoDocumento TipoDocumento { get; set; }
         public string NumeroDocumento { get; set; }
         public DateTime? FechaNacimiento { get; set; }
         public string Sexo { get; set; }
